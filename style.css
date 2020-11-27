@@ -1,0 +1,150 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#web {
+    padding-left: 15%;
+    margin-top: 7px;
+}
+
+#cat {
+    padding-left: 5%;
+    max-width: 400px;
+}
+
+header {
+    top: 0;
+    background-color: #507299;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    top: 40px;
+    bottom: 0;
+    padding: 13px 40px 0 40px;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #507299;
+}
+
+p {
+    background-color: #edeef0;
+}
+
+.block {
+    background-color: white;
+    border: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.aside {
+    max-width: 170px;
+    text-align: left;
+    margin-left: 1100px;
+    position: fixed;
+}
+
+.main {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #edeef0;
+    justify-content: center;
+    text-align: justify;
+    margin-left: -150px;
+    margin-top: 40px;
+}
+
+.main1 {
+    padding: 10px;
+    max-width: 500px;
+}
+
+.sidebar {
+    color: #507299;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 3px solid #e1e5eb;
+}
+
+nav {
+    max-width: 180px;
+}
+
+#comment {
+    float: right;
+}
+
+footer {
+    text-align: center;
+    color: #d0d0d0;
+    line-height: 30px;
+}
+
+#head {
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+    border-bottom: 3px solid #e1e5eb;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media (max-width: 1000px) {
+    .aside {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+    }
+    nav {
+        margin-top: 40px;
+        min-width: 400px;
+    }
+    ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    li {
+        padding-left: 20px;
+    }
+}
+
+li:hover {
+    background-color: #e1e5eb;
+}
+
+.block::selection {
+    color: green;
+}
+
+button {
+    float: right;
+    margin-top: 15px;
+}
